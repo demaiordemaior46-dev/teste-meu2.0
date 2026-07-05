@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia do Bahia - Corte & Estilo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">BARBEARIA DO BAHIA</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#planos">Planos</a></li> <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="btn-nav" onclick="abrirAgendamento()">Agendar Agora</button>
+        </nav>
+    </header>
 
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div> 
+        <div class="hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-scissors"></i> Desde 2020</span>
+            <h1>Corte & Estilo,<br>barbearia classica e acessível</h1>
+            <p>Barbearia tradicional com toque moderno, focada no seu estilo e bem-estar.</p>
+            
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="abrirAgendamento()">
+                    <i class="fa-regular fa-calendar-days"></i> Agendar Horário
+                </button>
+                <a href="#servicos" class="btn-secondary">Ver Preços</a>
+            </div>
+
+            <div class="hero-info-rapida">
+                <div class="info-item">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Seg à Sáb: 06h às 22h</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Umbará, Palmeiras - PR</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="secao-servicos">
+        <h2>Nossos Serviços</h2>
+        <p class="subtitulo">Profissionais qualificados para cuidar do seu visual</p>
+        <p class="subtitulo-destaque">Tudo essa lista por valores muito em conta!</p>
+        
+        <div class="servicos-grid">
+            <div class="card-servico">
+                <h3>Sobrancelha</h3>
+                <p>Alinhamento, coloração e freestyle.</p>
+                <span class="preco">R$ 10,00</span>
+            </div>
+            <div class="card-servico">
+                <h3>Cabelo</h3>
+                <p>Corte social, degradê ou freestyle lavado e finalizado na pomada.</p>
+                <span class="preco">R$ 30,00</span>
+            </div>
+            <div class="card-servico">
+                <h3>Barba</h3>
+                <p>Alinhamento de barba com toalha quente e produtos especiais.</p>
+                <span class="preco">R$ 30,00</span>
+            </div>
+            <div class="card-servico">
+                <h3>Combo Completo</h3>
+                <p>Cabelo + Barba + Sobrancelha com desconto especial.</p>
+                <span class="preco">R$ 65,00</span>
+            </div>
+        </div> </section>
+
+    <section id="planos" class="secao-planos">
+        <h2>Planos & Assinaturas</h2>
+        <p class="subtitulo">Corte o cabelo o mês inteiro por um preço fixo</p>
+        <p class="subtitulo-destaque">Economize e mantenha o estilo sempre impecável!</p>
+        
+        <div class="planos-grid">
+            <div class="card-plano">
+                <h3>PLANO BROTHER</h3>
+                <p>Cortes de cabelo ilimitados durante o mês inteiro.</p>
+                <span class="preco">R$ 80,00<small>/mês</small></span>
+                <button class="btn-assinar" onclick="assinarPlano('Brother')">Assinar Plano</button>
+            </div>
+
+            <div class="card-plano recomendado">
+                <div class="badge-recomendado">Mais Vendido</div>
+                <h3>PLANO VIP PREMIUM</h3>
+                <p>Cabelo, barba e sobrancelha ilimitados + 1 cerveja ou refrigerante por visita.</p>
+                <span class="preco">R$ 130,00<small>/mês</small></span>
+                <button class="btn-assinar-vip" onclick="assinarPlano('VIP')">Assinar Plano</button>
+            </div>
+
+            <div class="card-plano">
+                <h3>PLANO BARBEIRO</h3>
+                <p>Alinhamento de barba e tratamentos com toalha quente ilimitados.</p>
+                <span class="preco">R$ 70,00<small>/mês</small></span>
+                <button class="btn-assinar" onclick="assinarPlano('Barbeiro')">Assinar Plano</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
